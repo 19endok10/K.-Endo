@@ -3,9 +3,19 @@ package textExcel;
 // Update this file with your own code.
 
 public class Spreadsheet implements Grid{
+	
 	private int numOfrows;
 	private int numOfcols;
-	private int emptycell;
+	private Cell [][] Spreadsheet;
+	
+	public Spreadsheet () {
+		
+		this.numOfrows = 20;
+		this.numOfcols = 12;
+		Spreadsheet = new EmptyCell[numOfrows][numOfcols];
+	}
+	
+	
 	
 	@Override
 	public String processCommand(String command)
