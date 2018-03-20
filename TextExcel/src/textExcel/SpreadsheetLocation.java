@@ -2,8 +2,10 @@ package textExcel;
 
 //Update this file with your own code.
 
-public class SpreadsheetLocation implements Location
-{
+public class SpreadsheetLocation implements Location{
+	
+	public 
+	
     @Override
     public int getRow()
     {
