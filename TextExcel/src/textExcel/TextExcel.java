@@ -10,6 +10,10 @@ public class TextExcel
 
 	public static void main(String[] args)
 	{
-	    // Add your command loop here
+	  Scanner scanner = new Scanner (System.in);
+		Spreadsheet spreadsheet = new Spreadsheet();
+		String input;
+		
+		
 	}
 }

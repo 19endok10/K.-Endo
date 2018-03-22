@@ -8,13 +8,6 @@ public class Spreadsheet implements Grid{
 	private int numOfcols;
 	private Cell [][] Spreadsheet;
 	
-	public Spreadsheet () {
-		
-		this.numOfrows = 20;
-		this.numOfcols = 12;
-		Spreadsheet = new EmptyCell[numOfrows][numOfcols];
-	}
-	
 	
 	
 	@Override
@@ -28,14 +21,14 @@ public class Spreadsheet implements Grid{
 	public int getRows()
 	{
 		// TODO Auto-generated method stub
-		return
+		return 20;
 	}
 
 	@Override
 	public int getCols()
 	{
+		return 12;
 		// TODO Auto-generated method stub
-		return
 	}
 
 	@Override
