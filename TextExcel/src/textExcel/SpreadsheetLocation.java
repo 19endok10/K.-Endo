@@ -3,25 +3,26 @@ package textExcel;
 //Update this file with your own code.
 
 public class SpreadsheetLocation implements Location{
+	private String cellName;
 	
 	
     @Override
     public int getRow()
     {
-        // TODO Auto-generated method stub
-        return 0;
+        int RowNum = Integer.parseInt(cellName. substring(1)) - 1;      
+        return RowNum;
     }
 
     @Override
     public int getCol()
     {
-        // TODO Auto-generated method stub
-        return 0;
+        int ColNum = cellName. charAt (0) - 'A';
+        return ColNum;
     }
     
     public SpreadsheetLocation(String cellName)
     {
-        // TODO: Fill this out with your own code
+       this.cellName = cellName;
     }
 
 }
