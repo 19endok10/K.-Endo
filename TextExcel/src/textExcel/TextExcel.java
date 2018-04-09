@@ -15,8 +15,8 @@ public class TextExcel
 		String input = scanner.nextLine();
 			while (input.toLowerCase() != ("quit")) {
 				System.out.println(spreadsheet.processCommand(input));
-			
-			}
-		 
+			} 
 	}
 }
+
+

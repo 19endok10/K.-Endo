@@ -32,17 +32,20 @@ public class Spreadsheet implements Grid{
 	}
 
 	@Override
-	public Cell getCell(Location loc)
-	{
-		// TODO Auto-generated method stub
-		return null;
+	public Cell getCell(Location loc){
+		// TODO Auto-0''generated method stub
+		return (a,b);
 	}
 
 	@Override
 	public String getGridText()
 	{
+		
 		// TODO Auto-generated method stub
 		return null;
+	}
+	public abstract class Spreadsheet implements getCell{
+		
 	}
 
 }
