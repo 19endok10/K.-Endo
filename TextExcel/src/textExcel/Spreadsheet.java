@@ -38,9 +38,30 @@ public class Spreadsheet implements Grid{
 	}
 
 	@Override
-	public String getGridText()
+	public String getGridText() 
 	{
+		String result ="";
+		result +="   |";
+		for(int i=65; i<=76; i++) {
+			result+= (char)i;
+			for(int k=0; k<9; k++) {
+				result +="";
+			}
+			result +="|";
 		
+		}
+		result +="\n";
+		for(int a=1; a<= 20; a++) {
+			if(a<10) {
+				result += a+" ";
+			}
+			else {
+				result += a+" ";
+			}
+			result +="|";
+		}
+		
+		 //put abbreviatedcell text
 		// TODO Auto-generated method stub
 		return null;
 	}
