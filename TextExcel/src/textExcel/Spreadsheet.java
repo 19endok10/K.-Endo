@@ -13,7 +13,7 @@ public class Spreadsheet implements Grid{
 	@Override
 	public String processCommand(String command)
 	{
-		// TODO Auto-generated method stub
+		if( )
 		return "";
 	}
 
@@ -31,11 +31,6 @@ public class Spreadsheet implements Grid{
 		// TODO Auto-generated method stub
 	}
 
-	@Override
-	public Cell getCell(Location loc){
-		// TODO Auto-0''generated method stub
-		return (a,b);
-	}
 
 	@Override
 	public String getGridText() 
@@ -65,7 +60,9 @@ public class Spreadsheet implements Grid{
 		// TODO Auto-generated method stub
 		return null;
 	}
-	public abstract class Spreadsheet implements getCell{
+	public Cell getCell(Location loc){
+		return Spreadsheet[loc.getRow()][loc.getCol()];
+		
 		
 	}
 
