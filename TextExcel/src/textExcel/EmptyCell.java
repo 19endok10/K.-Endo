@@ -1,12 +1,13 @@
 package textExcel;
 
-public abstract class EmptyCell implements Cell{
-	public interface Cell
-	{
-		public String abbreviatedCellText(); // text for spreadsheet cell display, must be exactly length 10
-		public String fullCellText(); // text for individual cell inspection, not truncated or padded
+public class EmptyCell implements Cell {
+	public EmptyCell() {
+		
 	}
-	
-	    
-
-} 
+	public String abbreviatedCellText() {
+		return "           ";
+	}
+	public String fullCellText() {
+		return "";
+	}
+}
