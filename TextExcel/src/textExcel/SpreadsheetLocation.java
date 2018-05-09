@@ -25,4 +25,5 @@ public class SpreadsheetLocation implements Location{
        this.cellName = cellName;
     }
 
+    	
 }
