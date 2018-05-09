@@ -11,13 +11,11 @@ public class TextExcel{
 	  Scanner scanner = new Scanner (System.in);
 		Spreadsheet spreadsheet = new Spreadsheet();
 		String input = scanner.nextLine();
-			while (input.toLowerCase() != ("quit")) {
+		while (!input.toLowerCase().equals("quit")) {
 				System.out.println(spreadsheet.processCommand(input));
 				input = scanner.nextLine();
 			} 
-			while (!input.toLowerCase().equals("quit")) {
 				scanner.close();
-			}
-	}
+		}
 }
 

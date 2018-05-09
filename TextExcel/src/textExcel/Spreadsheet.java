@@ -32,8 +32,8 @@ public class Spreadsheet implements Grid{
 			return inspectCell(position);
 		}
 		else if(command.toLowerCase().contains("clear")&& command.length()>3) {
-			Location position=new SpreadsheetLocation(command.substring(6));
-			clearCell(position);
+			String position=command.substring(6);
+			clear(position);
 			return getGridText();
 		}
 		else {
@@ -64,8 +64,8 @@ public class Spreadsheet implements Grid{
 		return getGridText();
 	}
 	//clear sheet
-	public void clear(Location loc) {
-		SpreadsheetLocation clear = new SpreadsheetLocation(clear);
+	public void clear(String loc) {
+		SpreadsheetLocation clear = new SpreadsheetLocation(loc);
 		gridCell[clear.getRow()][clear.getCol()] = new EmptyCell();
 		return;
 	}
