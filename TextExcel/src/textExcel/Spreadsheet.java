@@ -55,7 +55,7 @@ public class Spreadsheet implements Grid{
 		else if(assignment[1].contains("%")) {
 			gridCell[loc.getRow()][loc.getCol()]=new PercentCell(assignment[1].substring(1));
 		}//formula cell; parentheses
-		else if(assignment[1].contains("(")&&assignment [1].contains(")")) {
+		else if(assignment[1].contains("(")) {
 			gridCell[loc.getRow()][loc.getCol()]= new FormulaCell(assignment[1].substring(1));
 		}//value cell; other cases
 		else {
