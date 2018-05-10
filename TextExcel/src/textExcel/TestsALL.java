@@ -2291,6 +2291,7 @@ public class TestsALL
         }
 
         @Test
+
         public void testDivideByZero()
         {
             String formula = "( 1 / 0 )";
@@ -2488,3 +2489,4 @@ public class TestsALL
         }             
     }
 }
+
