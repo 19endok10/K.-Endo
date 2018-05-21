@@ -5,11 +5,8 @@ public class RealCell implements Cell {
 	public RealCell(String intCell) {
 		this.intCell=intCell;
 	}
-	private String getDoubleValue1() {
-		return "";
-	}
 	public String abbreviatedCellText() {
-		String doubleValue=this.getDoubleValue1()+"";
+		String doubleValue=this.getDoubleValue()+"";
 		String result=doubleValue;
 		if(doubleValue.length()<10) {
 			for(int i=0; i<10-doubleValue.length(); i++) {
@@ -21,7 +18,7 @@ public class RealCell implements Cell {
 		}
 	}
 	public String getCellText() {
-		return this.getDoubleValue1() +"";
+		return this.getDoubleValue() +"";
 	}
 	public void setCellText(String intCell) {
 		this.intCell = intCell;

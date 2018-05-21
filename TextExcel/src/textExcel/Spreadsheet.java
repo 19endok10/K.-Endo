@@ -11,9 +11,10 @@ public class Spreadsheet implements Grid{
 	private int numOfcols;
 	private Cell [][] gridCell;
 	public Spreadsheet() {
-		gridCell=new Cell [2][12];
+		gridCell=new Cell [20][12];
 		for(int i=0;i<gridCell.length;i++) {
 			for(int j=0;j<gridCell [i].length;j++){
+				gridCell[i][j]=new EmptyCell();
 			}
 		}
 	}
@@ -95,7 +96,7 @@ public class Spreadsheet implements Grid{
 		for(int i=65; i<=76; i++) {
 			result+= (char)i;
 			for(int k=0; k<9; k++) {
-				result +="";
+				result +=" ";
 			}
 			result +="|";
 		
@@ -103,7 +104,7 @@ public class Spreadsheet implements Grid{
 		result +="\n";
 		for(int a=1; a<= 20; a++) {
 			if(a<10) {
-				result += a+" ";
+				result += a+"  ";
 			}
 			else {
 				result += a+" ";
