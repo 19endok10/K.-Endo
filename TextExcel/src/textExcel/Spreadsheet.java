@@ -7,13 +7,10 @@ package textExcel;
 
 public class Spreadsheet implements Grid{
 	
-	private int numOfrows;
-	private int numOfcols;
-	private Cell [][] gridCell;
+	private Cell[][] gridCell = new Cell[getRows()][getCols()];
 	public Spreadsheet() {
-		gridCell=new Cell [20][12];
-		for(int i=0;i<gridCell.length;i++) {
-			for(int j=0;j<gridCell [i].length;j++){
+		for(int i=0;i<getRows();i++) {
+			for(int j=0;j<getCols();j++){
 				gridCell[i][j]=new EmptyCell();
 			}
 		}
