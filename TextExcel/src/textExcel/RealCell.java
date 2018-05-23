@@ -1,9 +1,12 @@
 package textExcel;
 
 public class RealCell implements Cell {
-	private String intCell;
-	public RealCell(String intCell) {
-		this.intCell=intCell;
+	private String inputNum;
+	public RealCell(String inputNum) {
+		this.inputNum=inputNum;
+	}
+	public String getInputNum() {
+		return inputNum;
 	}
 	public String abbreviatedCellText() {
 		String doubleValue=this.getDoubleValue()+"";
@@ -20,13 +23,13 @@ public class RealCell implements Cell {
 	public String getCellText() {
 		return this.getDoubleValue() +"";
 	}
-	public void setCellText(String intCell) {
-		this.intCell = intCell;
+	public void setCellText(String inputNum) {
+		this.inputNum = inputNum;
 	}
 	public String fullCellText() {
-		return intCell;
+		return inputNum;
 	}
 	public double getDoubleValue() {
-		return Double.parseDouble(intCell);
+		return Double.parseDouble(inputNum);
 	}
 }
