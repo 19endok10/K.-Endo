@@ -1,15 +1,15 @@
 package textExcel;
 
 public class RealCell implements Cell {
-	private String intCell;
-	public RealCell(String intCell) {
-		this.intCell=intCell;
+	private String inputNum;
+	public RealCell(String inputNum) {
+		this.inputNum=inputNum;
 	}
-	private String getDoubleValue1() {
-		return null;
+	public String getInputNum() {
+		return inputNum;
 	}
 	public String abbreviatedCellText() {
-		String doubleValue=this.getDoubleValue1()+"";
+		String doubleValue=this.getDoubleValue()+"";
 		String result=doubleValue;
 		if(doubleValue.length()<10) {
 			for(int i=0; i<10-doubleValue.length(); i++) {
@@ -21,15 +21,15 @@ public class RealCell implements Cell {
 		}
 	}
 	public String getCellText() {
-		return this.getDoubleValue1() +"";
+		return this.getDoubleValue() +"";
 	}
-	public void setCellText(String intCell) {
-		this.intCell = intCell;
+	public void setCellText(String inputNum) {
+		this.inputNum = inputNum;
 	}
 	public String fullCellText() {
-		return intCell;
+		return inputNum;
 	}
 	public double getDoubleValue() {
-		return Double.parseDouble(intCell);
+		return Double.parseDouble(inputNum);
 	}
 }

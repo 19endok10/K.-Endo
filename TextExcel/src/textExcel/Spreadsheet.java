@@ -7,13 +7,11 @@ package textExcel;
 
 public class Spreadsheet implements Grid{
 	
-	private int numOfrows;
-	private int numOfcols;
-	private Cell [][] gridCell;
+	private Cell[][] gridCell = new Cell[getRows()][getCols()];
 	public Spreadsheet() {
-		gridCell=new Cell [2][12];
-		for(int i=0;i<gridCell.length;i++) {
-			for(int j=0;j<gridCell [i].length;j++){
+		for(int i=0;i<getRows();i++) {
+			for(int j=0;j<getCols();j++){
+				gridCell[i][j]=new EmptyCell();
 			}
 		}
 	}
@@ -95,7 +93,7 @@ public class Spreadsheet implements Grid{
 		for(int i=65; i<=76; i++) {
 			result+= (char)i;
 			for(int k=0; k<9; k++) {
-				result +="";
+				result +=" ";
 			}
 			result +="|";
 		
@@ -103,7 +101,7 @@ public class Spreadsheet implements Grid{
 		result +="\n";
 		for(int a=1; a<= 20; a++) {
 			if(a<10) {
-				result += a+" ";
+				result += a+"  ";
 			}
 			else {
 				result += a+" ";
