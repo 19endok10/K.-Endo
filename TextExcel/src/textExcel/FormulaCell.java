@@ -44,4 +44,11 @@ public class FormulaCell extends RealCell {
 		operand = Double.parseDouble(input);
 		return operand; 
 	}
+	public double sum(String begin, String loc1, String loc2) {
+		SpreadsheetLocation loc = new SpreadsheetLocation(loc1);
+		Cell excel = inputNum[loc.getRow()][loc.getCol()];
+		if(loc1.equals(loc2)) {
+			if(excel instanceOf RealCell) {
+		}
+	}
 }
