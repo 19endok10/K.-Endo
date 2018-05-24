@@ -5,9 +5,6 @@ public class RealCell implements Cell {
 	public RealCell(String inputNum) {
 		this.inputNum=inputNum;
 	}
-	public String getInputNum() {
-		return inputNum;
-	}
 	public String abbreviatedCellText() {
 		String doubleValue=this.getDoubleValue()+"";
 		String result=doubleValue;

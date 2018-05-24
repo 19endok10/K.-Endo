@@ -65,7 +65,6 @@ public class Spreadsheet implements Grid{
 	public void clear(String loc) {
 		SpreadsheetLocation clear = new SpreadsheetLocation(loc);
 		gridCell[clear.getRow()][clear.getCol()] = new EmptyCell();
-		return;
 	}
 
 	@Override
